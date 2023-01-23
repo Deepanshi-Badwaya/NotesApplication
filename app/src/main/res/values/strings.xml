@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NotesApplication</string>
+    <string name="search_notes">Search Notes</string>
+    <string name="title">Title</string>
+    <string name="note">Note</string>
+    <string name="date">Date</string>
+    <string name="add_notes">Add_Notes</string>
+    <string name="edit_title">Title</string>
+    <string name="et_notes">Start Typing</string>
+    <string name="back_arrow">Back Arrow</string>
+    <string name="check">Check</string>
+    <string name="delete">Delete</string>
+</resources>

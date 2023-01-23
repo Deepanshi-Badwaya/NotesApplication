@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+ style="@style/for_match"
+    tools:context=".AddNote">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/required_attributes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+           style="@style/required_attributes">
+            <ImageView
+                android:id="@+id/img_back_arrow"
+                style="@style/for_wrap"
+                android:padding="@dimen/image_padding"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:contentDescription="@string/back_arrow"
+                android:src="@drawable/ic_baseline_arrow_back_24"/>
+            <ImageView
+                android:id="@+id/img_check"
+                style="@style/for_wrap"
+                android:contentDescription="@string/check"
+                android:layout_marginEnd="@dimen/img_margin"
+                android:padding="@dimen/image_padding"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_baseline_check_24"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="0dp"
+        android:autofillHints="name"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et1_margin_start"
+        android:layout_marginTop="@dimen/et1_margin_top"
+        android:layout_marginEnd="@dimen/et1_margin_end"
+        android:background="@null"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:hint="@string/edit_title"
+        android:textSize="@dimen/et1_textSize"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/et_note"
+        style="@style/dp0"
+        android:layout_marginTop="@dimen/et2_margin_top"
+        android:background="@null"
+        android:autofillHints="name"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/et_notes"
+        android:inputType="textPersonName"
+        android:lineSpacingMultiplier="1.8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/et_title"
+        app:layout_constraintStart_toStartOf="@id/et_title"
+        app:layout_constraintTop_toBottomOf="@id/et_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
